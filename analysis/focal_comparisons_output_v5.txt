@@ -1,0 +1,102 @@
+Focal comparisons of the paper (Families A and B) under four inferential readings.
+
+Backbone resnet50, Family A (8 comparisons; Holm within this family)
+dataset    k  comparison                    n   diff  t 95% CI        sign-flip CI          p   Holm base SD  gate  NB 95% CI          NB t   NB p NB Holm
+PRID-2011  1  Strong+V vs Strong           10   +4.9  [ +3.2,  +6.7]  [ +3.1,  +6.7]   0.002  0.016     5.4  fail  [ -0.8, +10.7]    1.93  0.085   0.597
+PRID-2011  2  Strong+V vs Strong           10   +3.3  [ +0.6,  +5.9]  [ +0.6,  +6.0]   0.031  0.031     2.8  PASS  [ -5.4, +11.9]    0.85  0.417   0.750
+iLIDS-VID  1  Strong+V vs Strong           10   +4.6  [ +2.5,  +6.7]  [ +2.5,  +6.9]   0.002  0.016     4.0  PASS  [ -2.5, +11.7]    1.46  0.178   0.750
+iLIDS-VID  2  Strong+V vs Strong           10   +6.1  [ +3.6,  +8.5]  [ +3.7,  +8.7]   0.002  0.016     1.6  PASS  [ -2.0, +14.2]    1.69  0.125   0.750
+PRID-2011  1  Light+V vs Light             10   +4.6  [ +2.4,  +6.8]  [ +2.5,  +6.7]   0.002  0.016     4.6  PASS  [ -2.7, +11.9]    1.43  0.185   0.750
+PRID-2011  2  Light+V vs Light             10   +4.7  [ +2.2,  +7.3]  [ +2.2,  +7.3]   0.008  0.016     5.1  fail  [ -3.8, +13.2]    1.26  0.241   0.750
+iLIDS-VID  1  Light+V vs Light             10   +5.5  [ +3.2,  +7.9]  [ +3.2,  +7.9]   0.004  0.016     3.8  PASS  [ -2.3, +13.4]    1.60  0.144   0.750
+iLIDS-VID  2  Light+V vs Light             10   +6.7  [ +4.6,  +8.7]  [ +4.5,  +8.8]   0.002  0.016     3.0  PASS  [ -0.2, +13.5]    2.21  0.055   0.438
+
+Backbone resnet50, Family B (first flat control) (4 comparisons; Holm within this family)
+dataset    k  comparison                    n   diff  t 95% CI        sign-flip CI          p   Holm base SD  gate  NB 95% CI          NB t   NB p NB Holm
+PRID-2011  1  estimated vs flat (Light+V)  10   +0.4  [ -1.6,  +2.5]  [ -1.5,  +2.5]   0.688  0.688     4.9  fail  [ -6.2,  +7.1]    0.15  0.882   0.882
+PRID-2011  2  estimated vs flat (Light+V)  10   +2.7  [ +1.1,  +4.3]  [ +1.1,  +4.5]   0.016  0.031     3.5  fail  [ -2.7,  +8.1]    1.14  0.285   0.718
+iLIDS-VID  1  estimated vs flat (Light+V)  10   +2.2  [ +1.0,  +3.4]  [ +1.0,  +3.3]   0.008  0.023     2.4  fail  [ -1.7,  +6.1]    1.26  0.239   0.718
+iLIDS-VID  2  estimated vs flat (Light+V)  10   +5.9  [ +4.1,  +7.7]  [ +4.0,  +7.8]   0.002  0.008     3.3  PASS  [ -0.1, +11.9]    2.21  0.054   0.217
+
+Backbone resnet50, Family C1 (8 comparisons; Holm within this family)
+dataset    k  comparison                    n   diff  t 95% CI        sign-flip CI          p   Holm base SD  gate  NB 95% CI          NB t   NB p NB Holm
+PRID-2011  1  est vs matched flat (Light+V) 10   -0.0  [ -2.4,  +2.4]  [ -2.5,  +2.5]   1.000  1.000     4.1  fail  [ -8.0,  +8.0]   -0.00  1.000   1.000
+PRID-2011  2  est vs matched flat (Light+V) 10   +2.2  [ -0.4,  +4.9]  [ -0.4,  +4.9]   0.092  0.367     3.6  fail  [ -6.5, +11.0]    0.58  0.574   1.000
+iLIDS-VID  1  est vs matched flat (Light+V) 10   +2.4  [ +0.9,  +3.9]  [ +0.9,  +4.0]   0.008  0.047     2.4  PASS  [ -2.6,  +7.4]    1.10  0.302   1.000
+iLIDS-VID  2  est vs matched flat (Light+V) 10   +6.1  [ +4.2,  +7.9]  [ +4.1,  +7.8]   0.002  0.016     3.0  PASS  [ +0.0, +12.1]    2.28  0.049   0.392
+PRID-2011  1  est vs matched flat (Strong+V) 10   -0.9  [ -2.8,  +1.0]  [ -2.8,  +1.1]   0.373  0.746     3.7  fail  [ -7.3,  +5.5]   -0.32  0.757   1.000
+PRID-2011  2  est vs matched flat (Strong+V) 10   +1.3  [ -0.8,  +3.5]  [ -0.8,  +3.4]   0.225  0.674     3.2  fail  [ -5.7,  +8.4]    0.43  0.677   1.000
+iLIDS-VID  1  est vs matched flat (Strong+V) 10   +2.9  [ +1.0,  +4.7]  [ +0.9,  +4.8]   0.012  0.059     4.5  fail  [ -3.4,  +9.1]    1.04  0.326   1.000
+iLIDS-VID  2  est vs matched flat (Strong+V) 10   +4.0  [ +2.2,  +5.8]  [ +2.2,  +5.7]   0.004  0.027     3.2  PASS  [ -2.1, +10.1]    1.48  0.172   1.000
+
+Backbone resnet50, Family C2 (8 comparisons; Holm within this family)
+dataset    k  comparison                    n   diff  t 95% CI        sign-flip CI          p   Holm base SD  gate  NB 95% CI          NB t   NB p NB Holm
+PRID-2011  1  est vs shuffled (Light+V)    10   +5.7  [ +3.0,  +8.5]  [ +2.8,  +8.6]   0.004  0.023     5.2  PASS  [ -3.5, +14.9]    1.41  0.192   0.959
+PRID-2011  2  est vs shuffled (Light+V)    10   +2.4  [ -0.2,  +4.9]  [ +0.0,  +4.9]   0.070  0.109     3.7  fail  [ -6.1, +10.8]    0.63  0.544   1.000
+iLIDS-VID  1  est vs shuffled (Light+V)    10   +2.7  [ +2.0,  +3.3]  [ +2.0,  +3.3]   0.002  0.016     3.1  fail  [ +0.6,  +4.8]    2.86  0.019   0.150
+iLIDS-VID  2  est vs shuffled (Light+V)    10   +1.5  [ +0.5,  +2.6]  [ +0.4,  +2.7]   0.012  0.035     4.1  fail  [ -2.0,  +5.0]    0.99  0.348   1.000
+PRID-2011  1  est vs shuffled (Strong+V)   10   +4.0  [ +1.6,  +6.5]  [ +1.6,  +6.7]   0.008  0.031     4.2  fail  [ -4.1, +12.2]    1.12  0.291   1.000
+PRID-2011  2  est vs shuffled (Strong+V)   10   +1.7  [ +0.1,  +3.3]  [ +0.0,  +3.4]   0.055  0.109     2.8  fail  [ -3.5,  +6.9]    0.73  0.484   1.000
+iLIDS-VID  1  est vs shuffled (Strong+V)   10   +4.1  [ +2.5,  +5.6]  [ +2.4,  +5.7]   0.002  0.016     2.9  PASS  [ -1.0,  +9.1]    1.81  0.104   0.622
+iLIDS-VID  2  est vs shuffled (Strong+V)   10   +3.7  [ +2.4,  +4.9]  [ +2.3,  +4.8]   0.004  0.023     2.9  PASS  [ -0.4,  +7.8]    2.02  0.074   0.517
+
+Backbone resnet50, Family C3 (8 comparisons; Holm within this family)
+dataset    k  comparison                    n   diff  t 95% CI        sign-flip CI          p   Holm base SD  gate  NB 95% CI          NB t   NB p NB Holm
+PRID-2011  1  Light+V vs Light+P           10   +3.8  [ +2.5,  +5.1]  [ +2.6,  +5.2]   0.002  0.016     4.8  fail  [ -0.6,  +8.2]    1.97  0.080   0.644
+PRID-2011  2  Light+V vs Light+P           10   +4.6  [ +2.5,  +6.7]  [ +2.5,  +6.7]   0.004  0.023     4.4  PASS  [ -2.3, +11.5]    1.50  0.167   1.000
+iLIDS-VID  1  Light+V vs Light+P           10   +3.4  [ +1.6,  +5.2]  [ +1.6,  +5.1]   0.008  0.023     3.2  PASS  [ -2.6,  +9.4]    1.28  0.234   1.000
+iLIDS-VID  2  Light+V vs Light+P           10   +5.8  [ +3.2,  +8.4]  [ +3.2,  +8.0]   0.004  0.023     2.3  PASS  [ -2.8, +14.4]    1.53  0.160   1.000
+PRID-2011  1  Strong+V vs Strong+P         10   +1.8  [ -0.1,  +3.7]  [ +0.0,  +3.7]   0.074  0.086     4.6  fail  [ -4.4,  +8.0]    0.66  0.527   1.000
+PRID-2011  2  Strong+V vs Strong+P         10   +2.9  [ +0.4,  +5.4]  [ +0.4,  +5.6]   0.043  0.086     2.8  PASS  [ -5.4, +11.3]    0.79  0.449   1.000
+iLIDS-VID  1  Strong+V vs Strong+P         10   +3.5  [ +1.5,  +5.5]  [ +1.6,  +5.6]   0.002  0.016     3.7  fail  [ -3.1, +10.1]    1.21  0.256   1.000
+iLIDS-VID  2  Strong+V vs Strong+P         10   +5.6  [ +3.0,  +8.2]  [ +2.9,  +8.1]   0.004  0.023     2.1  PASS  [ -3.0, +14.2]    1.47  0.177   1.000
+
+Backbone resnet50, Family B (redefined: Light+V part of C1) (4 comparisons; Holm within this family)
+dataset    k  comparison                    n   diff  t 95% CI        sign-flip CI          p   Holm base SD  gate  NB 95% CI          NB t   NB p NB Holm
+PRID-2011  1  est vs matched flat (Light+V) 10   -0.0  [ -2.4,  +2.4]  [ -2.5,  +2.5]   1.000  1.000     4.1  fail  [ -8.0,  +8.0]   -0.00  1.000   1.000
+PRID-2011  2  est vs matched flat (Light+V) 10   +2.2  [ -0.4,  +4.9]  [ -0.4,  +4.9]   0.092  0.184     3.6  fail  [ -6.5, +11.0]    0.58  0.574   1.000
+iLIDS-VID  1  est vs matched flat (Light+V) 10   +2.4  [ +0.9,  +3.9]  [ +0.9,  +4.0]   0.008  0.023     2.4  PASS  [ -2.6,  +7.4]    1.10  0.302   0.906
+iLIDS-VID  2  est vs matched flat (Light+V) 10   +6.1  [ +4.2,  +7.9]  [ +4.1,  +7.8]   0.002  0.008     3.0  PASS  [ +0.0, +12.1]    2.28  0.049   0.196
+
+Backbone dinov2_s, Family A (8 comparisons; Holm within this family)
+dataset    k  comparison                    n   diff  t 95% CI        sign-flip CI          p   Holm base SD  gate  NB 95% CI          NB t   NB p NB Holm
+PRID-2011  1  Strong+V vs Strong           10   +1.2  [ -3.4,  +5.9]  [ -3.4,  +6.1]   0.576  1.000     4.3  fail  [-14.1, +16.6]    0.18  0.860   1.000
+PRID-2011  2  Strong+V vs Strong           10   +0.7  [ -1.1,  +2.5]  [ -1.1,  +2.5]   0.508  1.000     2.8  fail  [ -5.2,  +6.6]    0.26  0.803   1.000
+iLIDS-VID  1  Strong+V vs Strong           10   -1.9  [ -4.8,  +0.9]  [ -4.7,  +0.9]   0.166  0.516     3.0  fail  [-11.3,  +7.4]   -0.47  0.651   1.000
+iLIDS-VID  2  Strong+V vs Strong           10   -1.4  [ -3.0,  +0.2]  [ -3.1,  +0.2]   0.094  0.469     2.0  fail  [ -6.6,  +3.8]   -0.60  0.561   1.000
+PRID-2011  1  Light+V vs Light             10   -2.7  [ -5.0,  -0.4]  [ -4.9,  -0.3]   0.031  0.188     3.4  fail  [-10.4,  +5.0]   -0.80  0.447   1.000
+PRID-2011  2  Light+V vs Light             10   -1.7  [ -3.8,  +0.5]  [ -3.7,  +0.6]   0.129  0.516     2.8  fail  [ -8.8,  +5.5]   -0.53  0.606   1.000
+iLIDS-VID  1  Light+V vs Light             10   -6.7  [ -8.9,  -4.6]  [ -8.8,  -4.7]   0.002  0.016     3.8  fail  [-13.8,  +0.3]   -2.16  0.059   0.473
+iLIDS-VID  2  Light+V vs Light             10   -4.2  [ -6.4,  -2.0]  [ -6.7,  -2.0]   0.004  0.027     3.3  fail  [-11.5,  +3.1]   -1.30  0.226   1.000
+
+Backbone dinov2_s, Family B (first flat control) (4 comparisons; Holm within this family)
+dataset    k  comparison                    n   diff  t 95% CI        sign-flip CI          p   Holm base SD  gate  NB 95% CI          NB t   NB p NB Holm
+PRID-2011  1  estimated vs flat (Light+V)  10   -1.2  [ -4.1,  +1.7]  [ -4.1,  +1.7]   0.320  0.547     4.1  fail  [-10.8,  +8.4]   -0.29  0.778   1.000
+PRID-2011  2  estimated vs flat (Light+V)  10   -1.2  [ -3.4,  +0.9]  [ -3.4,  +0.9]   0.273  0.547     2.5  fail  [ -8.3,  +5.8]   -0.40  0.701   1.000
+iLIDS-VID  1  estimated vs flat (Light+V)  10   -6.5  [ -9.7,  -3.4]  [ -9.8,  -3.3]   0.004  0.016     5.5  fail  [-16.9,  +3.9]   -1.42  0.189   0.757
+iLIDS-VID  2  estimated vs flat (Light+V)  10   -3.3  [ -6.4,  -0.3]  [ -6.4,  -0.2]   0.039  0.117     2.4  fail  [-13.4,  +6.7]   -0.75  0.473   1.000
+
+Backbone dinov2_s, Family C1 (8 comparisons; Holm within this family)
+dataset    k  comparison                    n   diff  t 95% CI        sign-flip CI          p   Holm base SD  gate  NB 95% CI          NB t   NB p NB Holm
+PRID-2011  1  est vs matched flat (Light+V) 10   -2.7  [ -4.9,  -0.4]  [ -5.0,  -0.6]   0.023  0.141     2.9  fail  [-10.2,  +4.8]   -0.82  0.434   1.000
+PRID-2011  2  est vs matched flat (Light+V) 10   -1.0  [ -3.2,  +1.2]  [ -3.4,  +1.1]   0.430  1.000     2.2  fail  [ -8.3,  +6.3]   -0.31  0.760   1.000
+iLIDS-VID  1  est vs matched flat (Light+V) 10   -5.3  [ -7.8,  -2.8]  [ -7.3,  -2.7]   0.006  0.047     4.0  fail  [-13.6,  +3.0]   -1.44  0.184   1.000
+iLIDS-VID  2  est vs matched flat (Light+V) 10   -2.9  [ -5.5,  -0.3]  [ -5.5,  -0.5]   0.031  0.156     2.3  fail  [-11.5,  +5.7]   -0.77  0.460   1.000
+PRID-2011  1  est vs matched flat (Strong+V) 10   +0.3  [ -4.3,  +5.0]  [ -4.5,  +4.5]   0.916  1.000     3.5  fail  [-15.1, +15.7]    0.05  0.962   1.000
+PRID-2011  2  est vs matched flat (Strong+V) 10   -0.2  [ -2.4,  +2.0]  [ -2.2,  +2.0]   0.938  1.000     2.6  fail  [ -7.5,  +7.1]   -0.07  0.946   1.000
+iLIDS-VID  1  est vs matched flat (Strong+V) 10   -3.1  [ -5.0,  -1.1]  [ -5.3,  -1.1]   0.012  0.082     4.8  fail  [ -9.6,  +3.5]   -1.06  0.317   1.000
+iLIDS-VID  2  est vs matched flat (Strong+V) 10   -0.6  [ -1.5,  +0.3]  [ -1.5,  +0.3]   0.227  0.906     2.4  fail  [ -3.6,  +2.4]   -0.45  0.664   1.000
+
+Backbone dinov2_s, Family C3 (4 comparisons; Holm within this family)
+dataset    k  comparison                    n   diff  t 95% CI        sign-flip CI          p   Holm base SD  gate  NB 95% CI          NB t   NB p NB Holm
+PRID-2011  1  Light+V vs Light+P           10   -3.5  [ -5.1,  -1.9]  [ -5.1,  -2.0]   0.002  0.008     3.0  fail  [ -8.7,  +1.8]   -1.50  0.168   0.503
+PRID-2011  2  Light+V vs Light+P           10   -1.3  [ -3.5,  +0.8]  [ -3.4,  +0.6]   0.236  0.430     2.7  fail  [ -8.4,  +5.7]   -0.43  0.677   1.000
+iLIDS-VID  1  Light+V vs Light+P           10   -7.3  [ -9.6,  -4.9]  [ -9.7,  -4.9]   0.002  0.008     2.4  fail  [-15.1,  +0.5]   -2.11  0.064   0.257
+iLIDS-VID  2  Light+V vs Light+P           10   -1.8  [ -4.7,  +1.1]  [ -4.7,  +1.1]   0.215  0.430     3.0  fail  [-11.4,  +7.8]   -0.42  0.683   1.000
+
+Backbone dinov2_s, Family B (redefined: Light+V part of C1) (4 comparisons; Holm within this family)
+dataset    k  comparison                    n   diff  t 95% CI        sign-flip CI          p   Holm base SD  gate  NB 95% CI          NB t   NB p NB Holm
+PRID-2011  1  est vs matched flat (Light+V) 10   -2.7  [ -4.9,  -0.4]  [ -5.0,  -0.6]   0.023  0.070     2.9  fail  [-10.2,  +4.8]   -0.82  0.434   1.000
+PRID-2011  2  est vs matched flat (Light+V) 10   -1.0  [ -3.2,  +1.2]  [ -3.4,  +1.1]   0.430  0.430     2.2  fail  [ -8.3,  +6.3]   -0.31  0.760   1.000
+iLIDS-VID  1  est vs matched flat (Light+V) 10   -5.3  [ -7.8,  -2.8]  [ -7.3,  -2.7]   0.006  0.023     4.0  fail  [-13.6,  +3.0]   -1.44  0.184   0.737
+iLIDS-VID  2  est vs matched flat (Light+V) 10   -2.9  [ -5.5,  -0.3]  [ -5.5,  -0.5]   0.031  0.070     2.3  fail  [-11.5,  +5.7]   -0.77  0.460   1.000

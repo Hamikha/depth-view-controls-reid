@@ -1,0 +1,38 @@
+setting                          iters  condition                 splits  Rank-1         Rank-5         mAP            
+-----------------------------------------------------------------------------------------------------------------------
+prid2011 res=full k=1             1500  rgb/real                      10   60.8 +/-  4.6  82.4 +/-  4.6  70.6 +/-  4.0 
+prid2011 res=full k=1             1500  rgb/real_aug                  10   57.8 +/-  5.4  81.3 +/-  4.0  68.6 +/-  4.3 
+prid2011 res=full k=1             1500  rgb/real_synth/estimated      10   62.7 +/-  3.6  86.2 +/-  3.7  73.1 +/-  3.1 
+prid2011 res=full k=1             1500  rgb/synth/estimated           10   63.3 +/-  4.9  86.0 +/-  2.8  73.4 +/-  3.3 
+prid2011 res=full k=2             1500  rgb/real                      10   76.4 +/-  5.1  93.3 +/-  1.8  83.5 +/-  3.1 
+prid2011 res=full k=2             1500  rgb/real_aug                  10   83.4 +/-  2.8  95.4 +/-  1.7  88.6 +/-  1.7 
+prid2011 res=full k=2             1500  rgb/real_synth/estimated      10   86.6 +/-  3.4  97.3 +/-  1.5  91.2 +/-  2.3 
+prid2011 res=full k=2             1500  rgb/synth/estimated           10   83.1 +/-  3.0  96.2 +/-  1.8  89.0 +/-  1.8 
+prid2011 res=full k=5             1500  rgb/real                      10   80.9 +/-  2.9  95.7 +/-  2.0  87.1 +/-  2.5 
+prid2011 res=full k=5             1500  rgb/real_aug                  10   86.9 +/-  3.7  96.9 +/-  2.1  91.3 +/-  2.4 
+prid2011 res=full k=5             1500  rgb/real_synth/estimated      10   89.0 +/-  3.9  97.4 +/-  1.2  92.8 +/-  2.3 
+prid2011 res=full k=5             1500  rgb/synth/estimated           10   87.3 +/-  3.4  97.0 +/-  1.1  91.7 +/-  2.2 
+prid2011 res=full k=10            1500  rgb/real                      10   84.6 +/-  2.3  96.2 +/-  1.3  89.6 +/-  1.7 
+prid2011 res=full k=10            1500  rgb/real_aug                  10   89.4 +/-  3.1  97.8 +/-  1.6  92.9 +/-  2.1 
+prid2011 res=full k=10            1500  rgb/real_synth/estimated      10   90.3 +/-  2.2  98.2 +/-  1.2  93.7 +/-  1.7 
+prid2011 res=full k=10            1500  rgb/synth/estimated           10   88.9 +/-  3.7  97.8 +/-  1.1  92.8 +/-  2.3 
+
+Q1: rendered views against 2D, both with strong augmentation (rank1, 8 comparisons)
+  prid2011 res=full k=1          rgb/real_aug         -> rgb/real_synth/estimated    57.8 ->  62.7 (diff  +4.9, p=0.002, Holm p=0.016, n=10) fail
+  prid2011 res=full k=1          rgb/real_aug         -> rgb/synth/estimated         57.8 ->  63.3 (diff  +5.5, p=0.010, Holm p=0.068, n=10) PASS
+  prid2011 res=full k=2          rgb/real_aug         -> rgb/real_synth/estimated    83.4 ->  86.6 (diff  +3.3, p=0.031, Holm p=0.156, n=10) PASS
+  prid2011 res=full k=2          rgb/real_aug         -> rgb/synth/estimated         83.4 ->  83.1 (diff  -0.2, p=0.914, Holm p=1.000, n=10) fail
+  prid2011 res=full k=5          rgb/real_aug         -> rgb/real_synth/estimated    86.9 ->  89.0 (diff  +2.1, p=0.016, Holm p=0.094, n=10) fail
+  prid2011 res=full k=5          rgb/real_aug         -> rgb/synth/estimated         86.9 ->  87.3 (diff  +0.4, p=0.422, Holm p=1.000, n=10) fail
+  prid2011 res=full k=10         rgb/real_aug         -> rgb/real_synth/estimated    89.4 ->  90.3 (diff  +0.9, p=0.156, Holm p=0.625, n=10) fail
+  prid2011 res=full k=10         rgb/real_aug         -> rgb/synth/estimated         89.4 ->  88.9 (diff  -0.6, p=0.426, Holm p=1.000, n=10) fail
+
+Q1: rendered views against the better 2D baseline in each setting (rank1, 8 comparisons)
+  prid2011 res=full k=1          rgb/real             -> rgb/real_synth/estimated    60.8 ->  62.7 (diff  +1.9, p=0.104, Holm p=0.518, n=10) fail
+  prid2011 res=full k=1          rgb/real             -> rgb/synth/estimated         60.8 ->  63.3 (diff  +2.5, p=0.055, Holm p=0.328, n=10) fail
+  prid2011 res=full k=2          rgb/real_aug         -> rgb/real_synth/estimated    83.4 ->  86.6 (diff  +3.3, p=0.031, Holm p=0.219, n=10) PASS
+  prid2011 res=full k=2          rgb/real_aug         -> rgb/synth/estimated         83.4 ->  83.1 (diff  -0.2, p=0.914, Holm p=1.000, n=10) fail
+  prid2011 res=full k=5          rgb/real_aug         -> rgb/real_synth/estimated    86.9 ->  89.0 (diff  +2.1, p=0.016, Holm p=0.125, n=10) fail
+  prid2011 res=full k=5          rgb/real_aug         -> rgb/synth/estimated         86.9 ->  87.3 (diff  +0.4, p=0.422, Holm p=1.000, n=10) fail
+  prid2011 res=full k=10         rgb/real_aug         -> rgb/real_synth/estimated    89.4 ->  90.3 (diff  +0.9, p=0.156, Holm p=0.625, n=10) fail
+  prid2011 res=full k=10         rgb/real_aug         -> rgb/synth/estimated         89.4 ->  88.9 (diff  -0.6, p=0.426, Holm p=1.000, n=10) fail

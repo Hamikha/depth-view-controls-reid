@@ -1,0 +1,130 @@
+setting                          iters  condition                 splits  Rank-1         Rank-5         mAP            
+-----------------------------------------------------------------------------------------------------------------------
+ilidsvid res=full k=1                0  rgb/real_aug                   1    5.3           16.0           12.4          
+ilidsvid res=full k=1             1500  rgb/real                       1   27.3           44.7           36.1          
+ilidsvid res=full k=1             1500  rgb/real_aug                   1   23.3           40.7           32.2          
+ilidsvid res=full k=1             1500  rgb/real_synth/estimated       1   26.7           46.7           36.4          
+ilidsvid res=full k=1             1500  rgb/real_synth/flat            1   24.0           43.3           33.5          
+ilidsvid res=full k=1             1500  rgb/real_synth_weak/estimated     1   34.0           53.3           44.0          
+ilidsvid res=full k=1             1500  rgb/real_synth_weak/flat       1   30.7           49.3           39.9          
+ilidsvid res=full k=1             1500  rgb/synth/estimated            1   23.3           42.7           32.9          
+ilidsvid res=full k=1             1500  rgb/synth_weak/estimated       1   30.0           48.0           39.2          
+ilidsvid res=full k=1             1500  rgb/synth_weak/flat            1   29.3           46.7           38.8          
+prid2011 res=full k=1                0  rgb/real_aug                   1   51.7           74.2           61.4          
+prid2011 res=full k=1             1500  rgb/real                       1   64.0           82.0           73.0          
+prid2011 res=full k=1             1500  rgb/real_aug                   1   53.9           77.5           65.4          
+prid2011 res=full k=1             1500  rgb/real_synth/estimated       1   60.7           85.4           71.7          
+prid2011 res=full k=1             1500  rgb/real_synth/flat            1   61.8           83.1           71.4          
+prid2011 res=full k=1             1500  rgb/real_synth_weak/estimated     1   67.4           85.4           75.6          
+prid2011 res=full k=1             1500  rgb/real_synth_weak/flat       1   68.5           83.1           75.8          
+prid2011 res=full k=1             1500  rgb/synth/estimated            1   66.3           84.3           75.0          
+prid2011 res=full k=1             1500  rgb/synth_weak/estimated       1   68.5           82.0           76.0          
+prid2011 res=full k=1             1500  rgb/synth_weak/flat            1   70.8           83.1           76.4          
+tvrid res=64 k=1                     0  depth/real_aug                 1    9.0           28.1           16.8          
+tvrid res=64 k=1                     0  est_depth/real_aug             1   20.7           47.3           26.5          
+tvrid res=64 k=1                     0  rgb/real_aug                   1   89.9           97.6           86.9          
+tvrid res=64 k=1                     0  rgbd/real_aug                  1   79.3           93.8           79.6          
+tvrid res=64 k=1                     0  rgbe/real_aug                  1   78.4           92.5           75.0          
+tvrid res=64 k=1                  1500  depth/real_aug                 1   15.1           44.2           23.2          
+tvrid res=64 k=1                  1500  depth/real_synth/measured      1   18.5           48.3           24.3          
+tvrid res=64 k=1                  1500  est_depth/real_aug             1   16.9           49.5           25.2          
+tvrid res=64 k=1                  1500  est_depth/real_synth/estimated     1   17.5           43.7           24.1          
+tvrid res=64 k=1                  1500  rgb/real_aug                   1   90.3           98.7           91.3          
+tvrid res=64 k=1                  1500  rgb/real_synth/estimated       1   90.1           99.6           91.3          
+tvrid res=64 k=1                  1500  rgb/real_synth/flat            1   93.7           99.7           93.6          
+tvrid res=64 k=1                  1500  rgb/real_synth/measured        1   93.1           99.9           93.0          
+tvrid res=64 k=1                  1500  rgbd/real_aug                  1   87.8           98.4           87.3          
+tvrid res=64 k=1                  1500  rgbd10/real_aug                1   89.8           98.5           90.9          
+tvrid res=64 k=1                  1500  rgbd20/real_aug                1   89.7           98.7           90.6          
+tvrid res=64 k=1                  1500  rgbd30/real_aug                1   89.1           98.7           90.0          
+tvrid res=64 k=1                  1500  rgbe/real_aug                  1   81.6           96.0           82.0          
+tvrid res=64 k=1                  1500  rgbe10/real_aug                1   91.1           98.7           91.3          
+tvrid res=64 k=1                  1500  rgbe20/real_aug                1   89.9           98.8           90.3          
+tvrid res=64 k=1                  1500  rgbe30/real_aug                1   88.7           98.8           89.0          
+tvrid res=full k=1                   0  depth/real_aug                 1   24.2           54.0           29.7          
+tvrid res=full k=1                   0  est_depth/real_aug             1   35.8           66.5           39.3          
+tvrid res=full k=1                   0  rgb/real_aug                   1   93.7           98.8           91.7          
+tvrid res=full k=1                   0  rgbd/real_aug                  1   86.4           97.4           85.3          
+tvrid res=full k=1                   0  rgbe/real_aug                  1   89.4           97.6           85.4          
+tvrid res=full k=1                1500  depth/real_aug                 1   20.3           50.8           27.6          
+tvrid res=full k=1                1500  depth/real_synth/measured      1   22.0           51.6           26.9          
+tvrid res=full k=1                1500  est_depth/real_aug             1   25.9           61.0           34.0          
+tvrid res=full k=1                1500  est_depth/real_synth/estimated     1   30.0           61.8           33.5          
+tvrid res=full k=1                1500  rgb/real_aug                   1   92.3           98.5           92.2          
+tvrid res=full k=1                1500  rgb/real_synth/estimated       1   93.3           99.5           92.5          
+tvrid res=full k=1                1500  rgb/real_synth/flat            1   95.0           99.6           94.4          
+tvrid res=full k=1                1500  rgb/real_synth/measured        1   92.6           99.5           92.6          
+tvrid res=full k=1                1500  rgbd/real_aug                  1   88.4           97.4           86.8          
+tvrid res=full k=1                1500  rgbd10/real_aug                1   92.2           98.5           92.0          
+tvrid res=full k=1                1500  rgbd20/real_aug                1   91.7           98.4           91.3          
+tvrid res=full k=1                1500  rgbd30/real_aug                1   91.3           98.3           90.5          
+tvrid res=full k=1                1500  rgbe/real_aug                  1   88.4           98.0           88.5          
+tvrid res=full k=1                1500  rgbe10/real_aug                1   92.6           98.5           92.4          
+tvrid res=full k=1                1500  rgbe20/real_aug                1   92.3           98.5           92.1          
+tvrid res=full k=1                1500  rgbe30/real_aug                1   91.7           98.5           91.2          
+
+Accuracy against cost. Train prep is per training image; test time is per frame at deployment.
+setting                         condition                  Rank-1    mAP  train min  train prep ms  test ms/frame  within  ascent  oblique
+------------------------------------------------------------------------------------------------------------------------------------------
+ilidsvid res=full k=1           rgb/real_aug                  5.3   12.4        0.0            0.0           0.31       -       -        -
+ilidsvid res=full k=1           rgb/real                     27.3   36.1        0.6            0.0           0.27       -       -        -
+ilidsvid res=full k=1           rgb/real_aug                 23.3   32.2        0.6            0.0           0.23       -       -        -
+ilidsvid res=full k=1           rgb/real_synth/estimated     26.7   36.4        0.6            9.6           0.23       -       -        -
+ilidsvid res=full k=1           rgb/real_synth/flat          24.0   33.5        0.6            4.7           0.24       -       -        -
+ilidsvid res=full k=1           rgb/real_synth_weak/estimated   34.0   44.0        0.6            9.6           0.23       -       -        -
+ilidsvid res=full k=1           rgb/real_synth_weak/flat     30.7   39.9        0.6            4.7           0.23       -       -        -
+ilidsvid res=full k=1           rgb/synth/estimated          23.3   32.9        0.6            9.6           0.23       -       -        -
+ilidsvid res=full k=1           rgb/synth_weak/estimated     30.0   39.2        0.6            9.6           0.24       -       -        -
+ilidsvid res=full k=1           rgb/synth_weak/flat          29.3   38.8        0.6            4.7           0.23       -       -        -
+prid2011 res=full k=1           rgb/real_aug                 51.7   61.4        0.0            0.0           0.36       -       -        -
+prid2011 res=full k=1           rgb/real                     64.0   73.0        0.6            0.0           0.26       -       -        -
+prid2011 res=full k=1           rgb/real_aug                 53.9   65.4        0.6            0.0           0.24       -       -        -
+prid2011 res=full k=1           rgb/real_synth/estimated     60.7   71.7        0.6           13.6           0.24       -       -        -
+prid2011 res=full k=1           rgb/real_synth/flat          61.8   71.4        0.6            6.3           0.25       -       -        -
+prid2011 res=full k=1           rgb/real_synth_weak/estimated   67.4   75.6        0.6           13.6           0.24       -       -        -
+prid2011 res=full k=1           rgb/real_synth_weak/flat     68.5   75.8        0.6            6.3           0.24       -       -        -
+prid2011 res=full k=1           rgb/synth/estimated          66.3   75.0        0.6           13.6           0.24       -       -        -
+prid2011 res=full k=1           rgb/synth_weak/estimated     68.5   76.0        0.6           13.6           0.25       -       -        -
+prid2011 res=full k=1           rgb/synth_weak/flat          70.8   76.4        0.6            6.3           0.24       -       -        -
+tvrid res=64 k=1                depth/real_aug                9.0   16.8        0.0            0.0           0.30    10.9    11.3      4.8
+tvrid res=64 k=1                est_depth/real_aug           20.7   26.5        0.0            2.2           2.46    19.4    29.0     13.7
+tvrid res=64 k=1                rgb/real_aug                 89.9   86.9        0.0            0.0           0.31    82.7   100.0     87.1
+tvrid res=64 k=1                rgbd/real_aug                79.3   79.6        0.0            0.0           0.61    76.6    96.8     64.5
+tvrid res=64 k=1                rgbe/real_aug                78.4   75.0        0.0            2.2           2.78    69.0    97.6     68.5
+tvrid res=64 k=1                depth/real_aug               15.1   23.2        0.7            0.0           0.28    14.5    23.4      7.3
+tvrid res=64 k=1                depth/real_synth/measured    18.5   24.3        0.7           17.4           0.28    12.1    29.0     14.5
+tvrid res=64 k=1                est_depth/real_aug           16.9   25.2        0.7            2.2           2.45    16.1    27.4      7.3
+tvrid res=64 k=1                est_depth/real_synth/estimated   17.5   24.1        0.7           20.1           2.44    15.3    25.0     12.1
+tvrid res=64 k=1                rgb/real_aug                 90.3   91.3        0.7            0.0           0.28    85.5    98.4     87.1
+tvrid res=64 k=1                rgb/real_synth/estimated     90.1   91.3        0.7           20.1           0.28    88.7    98.4     83.1
+tvrid res=64 k=1                rgb/real_synth/flat          93.7   93.6        0.7           17.0           0.28    92.3    99.2     89.5
+tvrid res=64 k=1                rgb/real_synth/measured      93.1   93.0        0.7           17.4           0.28    89.1    99.2     91.1
+tvrid res=64 k=1                rgbd/real_aug                87.8   87.3        1.4            0.0           0.56    83.5    96.0     83.9
+tvrid res=64 k=1                rgbd10/real_aug              89.8   90.9        1.4            0.0           0.57    86.3    96.8     86.3
+tvrid res=64 k=1                rgbd20/real_aug              89.7   90.6        1.4            0.0           0.57    86.7    96.8     85.5
+tvrid res=64 k=1                rgbd30/real_aug              89.1   90.0        1.4            0.0           0.57    85.9    96.0     85.5
+tvrid res=64 k=1                rgbe/real_aug                81.6   82.0        1.4            2.2           2.73    73.8    87.1     83.9
+tvrid res=64 k=1                rgbe10/real_aug              91.1   91.3        1.3            2.2           2.74    86.3    96.8     90.3
+tvrid res=64 k=1                rgbe20/real_aug              89.9   90.3        1.3            2.2           2.74    83.5    96.8     89.5
+tvrid res=64 k=1                rgbe30/real_aug              88.7   89.0        1.3            2.2           2.74    81.5    96.0     88.7
+tvrid res=full k=1              depth/real_aug               24.2   29.7        0.0            0.0           0.28    22.6    41.1      8.9
+tvrid res=full k=1              est_depth/real_aug           35.8   39.3        0.0            2.2           2.46    30.6    56.5     20.2
+tvrid res=full k=1              rgb/real_aug                 93.7   91.7        0.0            0.0           0.32    88.3   100.0     92.7
+tvrid res=full k=1              rgbd/real_aug                86.4   85.3        0.0            0.0           0.60    85.9    98.4     75.0
+tvrid res=full k=1              rgbe/real_aug                89.4   85.4        0.0            2.2           2.78    83.5   100.0     84.7
+tvrid res=full k=1              depth/real_aug               20.3   27.6        0.7            0.0           0.30    20.6    28.2     12.1
+tvrid res=full k=1              depth/real_synth/measured    22.0   26.9        0.7           15.9           0.28    13.7    41.1     11.3
+tvrid res=full k=1              est_depth/real_aug           25.9   34.0        0.7            2.2           2.46    29.4    36.3     12.1
+tvrid res=full k=1              est_depth/real_synth/estimated   30.0   33.5        0.7           19.4           2.45    23.8    51.6     14.5
+tvrid res=full k=1              rgb/real_aug                 92.3   92.2        0.7            0.0           0.28    85.1    99.2     92.7
+tvrid res=full k=1              rgb/real_synth/estimated     93.3   92.5        0.7           19.4           0.28    90.3    98.4     91.1
+tvrid res=full k=1              rgb/real_synth/flat          95.0   94.4        0.7           15.7           0.28    91.5   100.0     93.5
+tvrid res=full k=1              rgb/real_synth/measured      92.6   92.6        0.7           15.9           0.29    89.1   100.0     88.7
+tvrid res=full k=1              rgbd/real_aug                88.4   86.8        1.4            0.0           0.58    79.8    96.8     88.7
+tvrid res=full k=1              rgbd10/real_aug              92.2   92.0        1.4            0.0           0.56    84.7    99.2     92.7
+tvrid res=full k=1              rgbd20/real_aug              91.7   91.3        1.4            0.0           0.56    83.9    99.2     91.9
+tvrid res=full k=1              rgbd30/real_aug              91.3   90.5        1.4            0.0           0.56    82.7    99.2     91.9
+tvrid res=full k=1              rgbe/real_aug                88.4   88.5        1.3            2.2           2.74    83.1    95.2     87.1
+tvrid res=full k=1              rgbe10/real_aug              92.6   92.4        1.4            2.2           2.73    85.1    99.2     93.5
+tvrid res=full k=1              rgbe20/real_aug              92.3   92.1        1.4            2.2           2.73    84.3    99.2     93.5
+tvrid res=full k=1              rgbe30/real_aug              91.7   91.2        1.4            2.2           2.73    83.9    98.4     92.7

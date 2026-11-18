@@ -1,0 +1,10 @@
+# Minimum versions. The exact versions used for the paper's experiments: [to be added].
+# On Blackwell GPUs install PyTorch from the cu128 or newer index:
+#   pip install torch torchvision --index-url https://download.pytorch.org/whl/cu128
+torch>=2.6
+torchvision>=0.21
+transformers>=4.45
+numpy
+pillow
+matplotlib
+pytest

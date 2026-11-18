@@ -1,0 +1,37 @@
+# Datasets and derived data (not redistributed)
+data/
+work/
+timing_work/
+views*/
+estimated_depth*/
+my_results/
+
+# Model weights and checkpoints
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.onnx
+
+# Generated figures and notebooks
+figures/
+*.ipynb
+.ipynb_checkpoints/
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+env/
+*.egg-info/
+build/
+dist/
+
+# Editors and operating systems
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
