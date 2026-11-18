@@ -1,4 +1,4 @@
-# Minimum versions. The exact versions used for the paper's experiments: [to be added].
+# Minimum versions. The paper's experiments used Python 3.12.10, torch 2.11.0+cu128, torchvision 0.26.0+cu128 and transformers 5.22.2.
 # On Blackwell GPUs install PyTorch from the cu128 or newer index:
 #   pip install torch torchvision --index-url https://download.pytorch.org/whl/cu128
 torch>=2.6

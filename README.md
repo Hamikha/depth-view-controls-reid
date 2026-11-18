@@ -85,7 +85,7 @@ pip install -r requirements.txt
 python -m pytest -q tests
 ```
 
-`requirements.txt` gives minimum versions. The exact versions of Python, PyTorch, torchvision and Hugging Face Transformers used for the paper are [to be added]. Pretrained weights are downloaded on first use: torchvision `IMAGENET1K_V2` (ResNet-50), `facebook/dinov2-small` and `depth-anything/Depth-Anything-V2-Small-hf`. The test suite uses small synthetic data and a stand-in depth model, so it needs no dataset.
+`requirements.txt` gives minimum versions. The paper's experiments ran with Python 3.12.10, PyTorch 2.11.0 with CUDA 12.8, torchvision 0.26.0 and Hugging Face Transformers 5.22.2. Pretrained weights are downloaded on first use: torchvision `IMAGENET1K_V2` (ResNet-50), `facebook/dinov2-small` and `depth-anything/Depth-Anything-V2-Small-hf`. The test suite uses small synthetic data and a stand-in depth model, so it needs no dataset.
 
 ## Identity splits
 
